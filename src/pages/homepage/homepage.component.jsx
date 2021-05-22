@@ -1,13 +1,14 @@
 import './homepage.styles.scss';
+import MenuContainer from '../../components/menu-container/menu-container.component'
 
 const Homepage = () =>{
     return (
         <div className="section-container">
             <div className="sections" id="home">
-                <div className="section-heading">Home</div>
+
             </div>
             <div className="sections" id="academics">
-                <div className="section-heading">academics</div>
+                <MenuContainer/>
             </div>
             <div className="sections" id="why-us">
                 <div className="section-heading">why us</div>
