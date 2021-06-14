@@ -2,8 +2,10 @@ import React from 'react';
 
 import './menu-item.styles.scss';
 import CustomButton from '../custom-button/custom-button.component';
+import { Link,useHistory } from 'react-router-dom';
 
-const MenuItem = ({name, imageUrl ,buttonName , desc}) => {
+const MenuItem = (props) => {
+    const {name, imageUrl ,buttonName , desc, id ,link} = props;
     return (
         <div className="menu-item">
             {imageUrl ?  <div className="image" style={{backgroundImage: `url(${imageUrl})`}}>
@@ -13,7 +15,10 @@ const MenuItem = ({name, imageUrl ,buttonName , desc}) => {
                 <small>{desc}</small>
             </div>
             <div className="button">
-                <CustomButton children={buttonName}/>
+            <Link to={{
+                    pathname:`${link}/${id}`,
+                    state:'/'
+                }}><CustomButton>{buttonName}</CustomButton></Link>
             </div>
         </div>
     )
