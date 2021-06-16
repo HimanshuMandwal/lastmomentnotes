@@ -1,6 +1,8 @@
 import './homepage.styles.scss';
 import MenuContainer from '../../components/menu-container/menu-container.component'
 import React from 'react';
+import Contact from '../../components/contact/contact';
+
 const DATA =[
         {
             id : 1,
@@ -101,7 +103,7 @@ class Homepage extends React.Component
                     <div className="section-heading">about us</div>
                 </div>
                 <div className="sections" id="contact-us">
-                    <div className="section-heading">contact us</div>
+                    <Contact/>
                 </div>
             </div>
         )

@@ -14,9 +14,7 @@ function App() {
         <Route path='/branch/:branchId/sem/:semId' exact component={NotesFinder}/>
         <Route path='/' component={Homepage}/>
       </Switch>
-
     </div>
-
   );
 }
 

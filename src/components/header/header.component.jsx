@@ -10,7 +10,7 @@ class Header extends React.Component {
         super(props)
         this.state = {
             smooth: true,
-            duration: 400,
+            duration: 100,
             clicked: false,
             another :props
         }
@@ -30,8 +30,8 @@ class Header extends React.Component {
                 <i className={this.state.clicked ? "fas fa-times" :"fas fa-bars"}></i>
                 </div>
                 <ul className={this.state.clicked ?"nav-menu active" : "nav-menu"}>
-                    <li><Link onClick={this.clickHandler} className="options" to="home" smooth={ this.state.smooth } duration={this.state.duration*1}> HOME </Link></li>
-                    <li><Link onClick={this.clickHandler} className="options" to="academics" smooth={ this.state.smooth } duration={this.state.duration*2 } > <Links to="/">ACADEMICS </Links> </Link></li>
+                    <li><Link  className="options" to="home" smooth={ this.state.smooth } duration={this.state.duration*1}> HOME </Link></li>
+                    <li><Link  className="options" to="academics" smooth={ this.state.smooth } duration={this.state.duration*2 } > <Links to="/">ACADEMICS </Links> </Link></li>
                     <li><Link className="options" to="why-us" smooth={ this.state.smooth } duration={this.state.duration*3 }> <Links to="/">WHY US </Links> </Link> </li>
                     <li><Link className="options" to="about-us"  smooth={ this.state.smooth } duration={this.state.duration*4 } > <Links to="/">ABOUT US </Links>   </Link></li>
                     <li><Link className="options" to="contact-us"  smooth={ this.state.smooth } duration={this.state.duration*5 } > <Links to="/">CONTACT US </Links>   </Link></li>
