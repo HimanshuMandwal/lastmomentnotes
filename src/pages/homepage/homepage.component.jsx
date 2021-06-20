@@ -2,7 +2,8 @@ import './homepage.styles.scss';
 import MenuContainer from '../../components/menu-container/menu-container.component'
 import React from 'react';
 import Contact from '../../components/contact/contact';
-
+import WhyUs from '../../components/screens/WhyUsScreen';
+import AboutUs from '../../components/screens/AboutUsScreen';
 const DATA =[
         {
             id : 1,
@@ -97,10 +98,10 @@ class Homepage extends React.Component
                     <MenuContainer items={this.state.items} title={'Academics'} link='branch'/>
                 </div>
                 <div className="sections" id="why-us">
-                    <div className="section-heading">why us</div>
+                    <div className="section-heading"><WhyUs /></div>
                 </div>
                 <div className="sections" id="about-us">
-                    <div className="section-heading">about us</div>
+                    <div className="section-heading"><AboutUs /></div>
                 </div>
                 <div className="sections" id="contact-us">
                     <Contact/>

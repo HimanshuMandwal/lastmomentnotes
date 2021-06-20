@@ -1,0 +1,43 @@
+.whyUsContent{
+    padding-top: 100px;
+    position: relative;
+    padding-left: 80px;
+}
+.whyUsContent  h1{
+    align-items: center;
+    padding-bottom: 20px;
+    font-size: 1000px;
+    font-family: 'Sacramento', cursive;
+    font-size: 4rem;
+    color: #66BFBF;
+  
+}
+.whyUsContent  p{
+    height:300px;
+    width:400px;
+    font-family: 'Dancing Script', cursive;
+    font-size: 1rem;
+
+}
+
+.whyUsContent  img {
+    position: absolute;
+    top:150px;
+    right:120px;
+}
+.whyUsBtn {
+    background: #11cdd4;
+    background-image: -webkit-linear-gradient(top, #11cdd4, #11999a);
+    background-image: -moz-linear-gradient(top, #11cdd4, #11999a);
+    background-image: -ms-linear-gradient(top, #11cdd4, #11999a);
+    background-image: -o-linear-gradient(top, #11cdd4, #11999a);
+    background-image: linear-gradient(to bottom, #11cdd4, #11999a);
+    -webkit-border-radius: 8;
+    -moz-border-radius: 8;
+    border-radius: 8px;
+    font-family: 'Merriweather', serif;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+  }
